@@ -3,6 +3,7 @@
 module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'weather-client',
+    podModulePrefix: 'weather-client/pods',
     environment: environment,
     rootURL: '/',
     locationType: 'auto',

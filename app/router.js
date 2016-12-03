@@ -7,6 +7,11 @@ const Router = Ember.Router.extend({
 });
 
 Router.map(function() {
+  this.route('city');
+  this.route('weather', function () {
+    this.route('forecast', { path: ':slug' }, function () {
+    });
+  });
 });
 
 export default Router;
