@@ -1,4 +1,9 @@
 <h1>Forecast</h1>
 {{#each data as |value|}}
   <h1>{{value.name}}</h1>
+  {{#each value.forecasts as |value|}}
+    {{log value}}
+    <div class="">{{value.date}}</div>
+    <div class="">{{value.humidity}}</div>
+  {{/each}}
 {{/each}}
